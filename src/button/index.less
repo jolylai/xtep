@@ -1,0 +1,69 @@
+.btns .btn {
+  margin-right: 0.5em;
+}
+
+.btn {
+  font-size: 1rem;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0.5em 1em;
+
+  //   背景 边框
+  background-color: #fff;
+  border-color: #dbdbdb;
+  border-width: 1px;
+  color: #363636;
+  border-radius: 4px;
+
+  //   文字排版
+  justify-content: center;
+  text-align: center;
+  white-space: normal;
+  line-height: 1.5;
+  vertical-align: top;
+}
+
+.btn:active {
+  border-color: #4a4a4a;
+  color: #363636;
+  color: red;
+}
+
+// 聚焦
+.btn:focus {
+  // 去除默认
+  outline: 0;
+
+  border-color: #3273dc;
+  color: #363636;
+}
+
+.btn:focus:not(:active) {
+  box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
+}
+
+.icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn .icon {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.btn .icon:first-child {
+  margin-right: 0.25em;
+}
+
+// disabled
+.btn[disabled] {
+  cursor: not-allowed;
+  border-color: #dbdbdb;
+  box-shadow: none;
+  opacity: 0.5;
+}

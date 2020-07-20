@@ -18,7 +18,8 @@
     "declaration": true,
     "skipLibCheck": true,
     "paths": {
-      "@ant-design/pro-table": ["./src"]
+      "xtep": ["./src"],
+      "@@/*": ["./src/.umi/*"]
     }
   },
   "exclude": [
